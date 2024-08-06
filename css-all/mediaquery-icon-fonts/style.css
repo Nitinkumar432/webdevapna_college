@@ -1,0 +1,41 @@
+#pets{
+    background-color: bisque;
+    display:flex;
+    margin:0 auto;
+
+
+
+
+
+}
+
+.card{
+    width:350px;
+    margin:20px;
+    border:2px solid black;
+    
+    text-align: center;
+
+    border-radius: 15px;
+    position:relative;
+    top:0%;
+    box-shadow: 2px 2px 8px  rgb(55, 55, 54) ;
+    text-wrap:balance;
+
+}
+.card img{
+    width:300px;
+    margin:10px;
+    border-radius:15px;
+}
+@media (max-width:750px) {
+    .card{
+        width:400px;
+        margin:0 auto;
+    
+    }
+    #pets{
+        display:block
+    }
+    
+}

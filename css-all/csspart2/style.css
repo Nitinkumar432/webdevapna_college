@@ -1,0 +1,20 @@
+div{
+    width:300px;
+    height:325px;
+}
+h1{
+    border-color: red;
+    border-style: groove;
+}
+div{
+    /* border-width:20px;
+    border-style:inset;
+    border-color:red;
+    border-collapse: collapse; */
+    border:2px solid blue;
+    border-left-color: rgb(247, 119, 14);
+}
+/* //padding property */
+div{
+    padding-right:20px;
+}

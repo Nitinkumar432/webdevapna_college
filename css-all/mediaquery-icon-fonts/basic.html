@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,h2,h3{
+        padding:20px;
+        background-color: aquamarine;
+        text-align: center;
+        
+    }
+    @media (min-width:400px) {
+        h1{
+            color:rgb(88, 88, 218);
+            background-color: black;
+        }
+        
+    }
+    @media (max-width:400px) {
+        h2{
+            color:blue;
+            background-color: black;
+        }
+        
+    }
+    @media (width:400px) {
+        h3{
+            /* color:blue;
+            background-color: black; */
+            display:none;
+        }
+        
+    }
+    @media(orientation:landscape) {
+        h1{
+            background-color:brown;
+            color:red;
+        }
+        
+    }
+</style>
+<body>
+    <h1>hello</h1>
+    <h2>hii</h2>
+    <h3>done</h3>
+    
+</body>
+</html>

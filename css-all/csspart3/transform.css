@@ -1,0 +1,26 @@
+div{
+height:80px;
+width:80px;
+border: 2px solid red;
+margin:0 auto;
+background-color: aquamarine; 
+}
+div:hover{
+    transform: rotate(45deg);
+
+}
+#one{
+    transform: scale(3,0.3);
+}
+#two{
+    transform: translate(200px,60px);
+    transform: translateX(100px);
+}
+#three{
+    height:100px;
+    width:100px;
+    transform:skew(45deg)
+}
+#four{
+    transform: translate(30px) skew(45deg) scale(10);
+}

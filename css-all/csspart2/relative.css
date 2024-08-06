@@ -1,0 +1,51 @@
+h1{
+
+    border:2px solid blue;
+    width:50%;
+    text-align: center;
+}
+#out{
+    height:200px;
+    width:200px;
+    background-color: aquamarine;
+}
+#in{
+    height: 40px;
+    width:40px;
+    background-color: blueviolet;
+    margin-left: 10%;
+}
+#outer{
+    margin-top: 20px;
+height:200px;
+width:200px;
+border:2px solid blue;
+background-color: aquamarine;
+font-size:20px;
+}
+#inner{
+    height:100px;
+    width:100px;
+    background-color: blanchedalmond;
+    font-size:1.5em;
+    
+
+}
+button{
+    font-size:20px;
+    border-radius: 15px;;
+    background-color: blue;
+    border:2px solid green;
+    padding-left:20px;
+    padding-top:10px;
+}
+section{
+    font-size: 15px;
+}
+/* //rem using to avoid snowfall effectt */
+/* div{
+    font-size: 2em;
+} */
+div{
+    font-size: 2rem;
+}

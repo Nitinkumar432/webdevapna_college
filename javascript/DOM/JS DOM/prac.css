@@ -1,0 +1,12 @@
+.red{
+    color:red;
+}
+.blue{
+    color:blue;
+}
+.box{
+  background-color: green ; 
+  border:2px solild black;
+  padding:40px;
+
+}

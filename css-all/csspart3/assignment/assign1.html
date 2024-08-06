@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+        height:200px;
+        width:200px;
+        border-radius:15px;
+        display:inline-block;
+        margin:20px;
+        border:2px solid black;
+        text-align: center;
+        background-image: linear-gradient(to left, rgb(213, 23, 23), rgb(233, 233, 19),rgb(38, 38, 184));
+
+        color:white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+        transition: margin-top 1s ease-in-out 0s;
+    }
+    .card:hover {
+    background-color: rgb(113, 31, 31);
+    box-shadow: 1px 0px 1px solid rgb(113, 31, 31);
+    margin-top:1000px;
+    border-radius:50%;
+    }
+
+    img{
+     border-radius: 15px 15px 0px 0px;;
+        height:100px;
+        width:200px;
+    }
+    
+    
+</style>
+<body>
+    <div class="card">
+        <img src="man.jpg" alt="">
+        
+        <div class="desc">
+            <br>
+            <br>
+            <span class="text">Nitin Kumar</span><br/>
+            <span>Data Analyst</span>
+        </div>
+    </div>
+    <div class="card">
+        <img src="women.jpg" alt="">
+        <div class="desc">
+            <br>
+            <br>
+            <span>Mohit kumar</span><br/>
+            <span>Software Engineer</span>
+        </div>
+    </div>
+    
+</body>
+</html>

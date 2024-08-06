@@ -1,0 +1,22 @@
+div{
+    background-color:rgb(159, 16, 16);
+}
+div > li{
+    background-color: black;
+}
+h1::first-line{
+    background-color: blueviolet;
+}
+button{
+    border:none;
+    border-radius: 15px;
+    text-align :center;
+    padding:15px;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    background-color: rgb(233, 249, 167);
+}

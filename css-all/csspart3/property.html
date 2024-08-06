@@ -1,0 +1,86 @@
+<!-- the postion css property sets how an element is postional in a document -->
+<!-- top left right bottom -->
+<!-- postion : static means fixed  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color:red;
+        height:100px;
+        width:100px;
+        border:2px solid black;
+        display:inline-block;
+        margin:50px;
+    }
+    #static{
+        background-color: bisque;
+        position: static;/*by default postion is static*/
+        top:100px;
+        left:100px;
+    }
+    #relative{
+        background-color: bisque;
+        position: relative;/* postion is relative*/
+        top:100px;
+        left:100px;
+
+    }
+    #absolute{
+        background-color: bisque;
+        position: absolute;/* postion is relative*/
+        top:100px;
+        left:100px;
+    }
+    #fixed{
+        
+        background-color: bisque;
+        position: fixed;/* postion is relative*/
+        top:100px;
+        left:100px;
+    }
+</style>
+<body>
+    <div>
+
+
+    </div>
+    <div id="static">
+
+
+    </div>
+    <br>
+    <div>
+
+
+    </div>
+    <div id="relative">
+        
+
+    </div>
+    <br>
+    <div>
+
+
+    </div>
+    <div id="absolute">
+        
+
+    </div>
+    <br>
+    <div>
+
+
+    </div>
+    <div id="fixed">
+        <p>fixed</p>
+        
+
+    </div>
+    
+</body>
+</html>

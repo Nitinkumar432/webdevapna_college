@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling for the button */
+        button {
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Padding inside the button */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Add some rounded corners */
+            cursor: pointer; /* Cursor style */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker background color on hover */
+        }
+
+        /* Styling for the paragraph */
+        #fact {
+            border: 2px solid #ccc; /* Border style */
+            padding: 10px; /* Padding inside the box */
+            width: 80%; /* Width of the box */
+            margin: 20px auto; /* Center the box horizontally */
+            text-align: center; /* Center text horizontally */
+            animation: fadeIn 1s ease-in-out; /* Animation for fade in */
+        }
+
+        /* Keyframes for fade in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <h1>Get Random Facts</h1>
+    <button >Show New Fact</button>
+    <p id="fact"></p>
+    <script src="api.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width:600px;
+        height:300px;
+        background-color: blue;
+        display:grid;
+        grid-template-rows: 60px 60px 60px ;
+        /* grid-template-columns: 100px 100px 100px 100px; */
+        grid-template-columns: 100px 100px;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+    .item{
+        width:100px;
+        height:50px;
+        text-align:center;
+        background-color: brown;
+        border:2px solid rgb(254, 255, 254);
+    }
+    /* grid templete roews */
+</style>
+<!-- cdd grid -->
+<!-- settigs a contaijer dispay to gris make all childern grid items -->
+<body>
+    <h1>grid playground</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

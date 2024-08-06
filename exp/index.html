@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Capture</title>
+</head>
+<body>
+    <h1>Auto Capture</h1>
+    <img id="capturedImage" src="#" alt="Captured Image">
+    <script>
+        // Function to capture image
+        function captureImage() {
+            const video = document.createElement('video');
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+            // Get access to the camera
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    video.srcObject = stream;
+                    video.play();
+
+                    // Set interval to capture image every 1 second
+                    setInterval(function() {
+                        // Draw the current frame of the video onto the canvas
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                        // Convert canvas image to data URL
+                        const imageDataURL = canvas.toDataURL('image/png');
+
+                        // Update image element with captured image
+                        document.getElementById('capturedImage').src = imageDataURL;
+                    }, 1000);
+                })
+                .catch(function(err) {
+                    console.error('Error accessing the camera: ', err);
+                });
+        }
+
+        // Call the captureImage function when the page loads
+        window.addEventListener('load', captureImage);
+    </script>
+</body>
+</html>
